@@ -6,17 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>hr_form</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
     <h1>Вакансия: Junior Frontend Developer</h1>
-    <div>
-        <div>
+    <div class="user-header">
+        <div class="user-photo">
             <img src="images/photo.jpg" alt="" />
         </div>
-        <div>
-            Имя: Елена
+        <div class="user-data">
+            <div class="user-name">Имя: Елена</div>
+            <div>
+                <a href="https://github.com/ElenaGPN2019/hr_form">Github HR form</a>
+            </div>
+            <div>Опыт работы: нет</div>
         </div>
+    </div>
+
+    <div>
+        <div>Дата собеседования: <input type="date" /></div>
+        <div>
+            <H2>Уровень английского:</H2>
+            <div>
+                <input type="radio" id="contactChoice1" name="contact" value="email" />
+                <label for="contactChoice1">Плохо</label>
+
+                <input type="radio" id="contactChoice2" name="contact" value="phone" />
+                <label for="contactChoice2">Средне</label>
+
+                <input type="radio" id="contactChoice3" name="contact" value="mail" />
+                <label for="contactChoice3">Хорошо</label>
+
+                <input type="radio" id="contactChoice3" name="contact" value="mail" />
+                <label for="contactChoice3">Превосходно</label>
+            </div>
+        </div>
+
+        <div>
+            <h2>Ключевые навыки</h2>
+            <ul>
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ul>
+        </div>
+        <div>
+            <input type="text" size="40">
+            <select>
+  <option>Пункт 1</option>
+  <option>Пункт 2</option>
+</select>
+
+            <input type="checkbox" checked>
+
+            <table>
+                <tr>
+                    <th>#</th>
+                    <th>Сроки</th>
+                    <th>Наименование</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+            </table>
+        </div>
+
+
     </div>
 </body>
 
