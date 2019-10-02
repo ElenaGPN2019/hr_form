@@ -7,106 +7,116 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>hr_form</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
 
 <body>
-    <h1>Вакансия: Junior Frontend Developer</h1>
-    <div class="user-header">
-        <div class="user-photo">
-            <img src="images/photo.jpg" alt="" />
-        </div>
-        <div class="user-data">
-            <div class="user-name">Имя: Елена</div>
-            <div>
-                <a href="https://github.com/ElenaGPN2019/hr_form">Github HR form</a>
+    <div class="wrapper">
+        <div class="contaner">
+            <h1>Вакансия: Junior Frontend Developer</h1>
+            <div class="user-header">
+                <div class="user-photo">
+                    <img src="images/account_box-24px.svg" alt="" />
+                </div>
+                <div class="user-data">
+                    <div class="user-name">Имя: Елена</div>
+                    <div>
+                        <a href="https://github.com/ElenaGPN2019/hr_form">
+                            Github HR form
+                        </a>
+                    </div>
+                    <div>Опыт работы: нет</div>
+                </div>
             </div>
-            <div>Опыт работы: нет</div>
-        </div>
-    </div>
 
-    <div>
-        <div>Дата собеседования: <input type="date" /></div>
-        <div>
-            <H2>Уровень английского:</H2>
             <div>
-                <input type="radio" id="contactChoice1" name="contact" value="email" />
-                <label for="contactChoice1">Плохо</label>
+                <div>Дата собеседования: <input type="date" /></div>
+                <div>
+                    <H2>Уровень английского:</H2>
+                    <div>
+                        <input type="radio" id="contactChoice1" name="contact" value="email" />
+                        <label for="contactChoice1">Плохо</label>
 
-                <input type="radio" id="contactChoice2" name="contact" value="phone" />
-                <label for="contactChoice2">Средне</label>
+                        <input type="radio" id="contactChoice2" name="contact" value="phone" />
+                        <label for="contactChoice2">Средне</label>
 
-                <input type="radio" id="contactChoice3" name="contact" value="mail" />
-                <label for="contactChoice3">Хорошо</label>
+                        <input type="radio" id="contactChoice3" name="contact" value="mail" />
+                        <label for="contactChoice3">Хорошо</label>
 
-                <input type="radio" id="contactChoice4" name="contact" value="mail" />
-                <label for="contactChoice3">Превосходно</label>
+                        <input type="radio" id="contactChoice4" name="contact" value="mail" />
+                        <label for="contactChoice4">Превосходно</label>
+                    </div>
+                </div>
+
+                <div>
+                    <h2>Ключевые навыки</h2>
+                    <ul id="listskills">
+                        <li>HTML</li>
+                        <li>CSS/LESS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                <div>
+                    <input type="text" id="inputSkill" size="40" placeholder="Введите навык" />
+                    <button type="text" id="addButton">
+                        Добавить в список</button>
+                </div>
+                <div>
+                    <h2>
+                        Коммуникабельность:
+                        <select>
+                <option>Да</option>
+                <option>Нет</option>
+              </select>
+                    </h2>
+                </div>
+                <div>
+                    <h2>
+                        Желаемая з/п:
+                        <input type="text" name="введите значение" placeholder="введите значение" />
+                    </h2>
+                </div>
             </div>
-        </div>
+            <div>
+                <h2>Подходит по критериям:</h2>
+                <input type="checkbox" name="option2" value="a2" id="chbEngl" />
+                <label for="chbEngl">Знание английского</label>
+                <input type="checkbox" name="option3" value="a3" id="chbSalary" />
+                <label for="chbSalary">Оклад</label>
+                <input type="checkbox" name="option4" value="a4" id="chbSkills" />
+                <label for="chbSkills">Навыки</label>
+                <input type="checkbox" name="option5" value="a5" id="chbGoodFellow" />
+                <label for="chbGoodFellow">Сразу видно, что свой человек</label>
+            </div>
+            <div>
+                <h2>Образование, курсы и т.п.</h2>
+            </div>
 
-        <div>
-            <h2>Ключевые навыки</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS/LESS</li>
-                <li>JavaScript</li>
-                <li>...</li>
-            </ul>
-        </div>
-        <div>
-            <input type="text" size="40" value="Введите навык">
-            <input type="text" value="Добавить в список">
-        </div>
-        <div>
-            <h2>Коммуникабельность:
-                <select>
-  <option>Да</option>
-  <option>Нет</option>
-</select>
-            </h2>
-        </div>
-        <div>
-            <h2>Желаемая з/п:
-                <input type="text" name="введите значение" value="введите значение">
-            </h2>
+            <table>
+                <tr>
+                    <th>#</th>
+                    <th>Сроки обучения</th>
+                    <th>Наименование учебного заведения, курсов</th>
+                </tr>
+                <tr class="odd">
+                    <td>1</td>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+                <tr class="odd">
+                    <td>3</td>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+            </table>
         </div>
     </div>
-    <div>
-        <h2>Подходит по критериям:</h2>
-        <input type="checkbox" name="option2" value="a2">Знание английского
-        <input type="checkbox" name="option3" value="a3">Оклад
-        <input type="checkbox" name="option4" value="a4">Навыки
-        <input type="checkbox" name="option5" value="a5">Сразу видно, что свой человек</p>
-    </div>
-    <div>
-        <h2>Образование, курсы и т.п.</h2>
-    </div>
-
-    <table>
-        <tr>
-            <th>#</th>
-            <th>Сроки обучения</th>
-            <th>Наименование учебного заведения, курсов</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>...</td>
-            <td>...</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>...</td>
-            <td>...</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>...</td>
-            <td>...</td>
-        </tr>
-    </table>
-    </div>
-
-
-    </div>
+    <script src="app.js"></script>
 </body>
 
 </html>
